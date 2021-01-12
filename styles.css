@@ -8,18 +8,43 @@
     --small: 'Montserrat', sans-serif;
 }
 
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+hr {
+    border: black solid 1.2px;
+    width: 90%;
+    margin: 0.5rem auto;
+}
+
+.design1 {
+    height: 300px;
+    width: 100%;
+    background-color: violet;
+    position: absolute;
+    top: 155px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* //////////////////// Navbar styles //////////////////// */
 
 .navmain {
     display: flex;
-    background-color: #212121;
+    background-color: #EEEEEE;
     padding: 0.5rem 0rem;
+    position: sticky;
+    z-index: 2;
+    top: 0;
     
 }
 
@@ -36,7 +61,7 @@ body {
     padding-left: 3rem;
     font-family: var(--logo);
     font-size: 2rem;
-    color: white;
+    
 }
 
 .navlinks li {
@@ -47,8 +72,9 @@ body {
 .navlinks li a {
     text-decoration: none;
     font-family: var(--small);
-    font-size: 1rem;
-    color: white
+    font-size: 0.8rem;
+    color: black;
+    text-transform: uppercase;
 }
 
 /* //////////////////// */
@@ -58,7 +84,7 @@ body {
 
 .firstbox {
     display: flex;
-    background-color: #616161;
+    /* background-color: #616161; */
     padding: 4rem 1rem;
 }
 
@@ -69,21 +95,21 @@ body {
 
 .infotxt {
     flex-direction: column;
-    margin: auto 5rem;
+    margin: auto 0rem;
+    padding: 0rem 2rem;
     text-align: left;
 }
 
 .infotxt h2 {
     font-family: var(--big);
     font-weight: 700;
-    font-size: 3rem;
-    color: white;
-    border-bottom: solid white 2px;
+    font-size: 3.5rem;
+    border-bottom: solid 2px;
 }
 
 .infotxt p {
     font-family: var(--small);
-    color: white;
+    font-size: 2rem;
 }
 
 .infopic {
@@ -98,7 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3rem 1rem;  
-    background-color: #EEEEEE; 
+    /* background-color: #EEEEEE;  */
 }
 
 .infotxt2, .infopic2 {
@@ -120,6 +146,7 @@ body {
 
 .infopic2 {
     padding: 2rem 0rem;
+    flex-flow: wrap;
 }
 
 .infopic2 h3 {
@@ -127,8 +154,9 @@ body {
     font-family: var(--logo);
 }
 .infopic2 .skills {
+    text-align: center;
     padding: 3rem;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 /* //////////////////// */
@@ -139,7 +167,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3rem 1rem;
-    background-color: #616161;
+    /* background-color: #616161; */
 }
 
 .infotxt3, .infopic3 {
@@ -157,21 +185,23 @@ body {
 
 .infotxt3 h1 {
     font-size: 4rem;
-    color: white;
+    
 }
 
 .infopic3 {
     padding: 2rem 0rem;
+    flex-flow: wrap;
 }
 
 .infopic3 h3 {
     text-align: center;
     font-family: var(--logo);
-    color: white;
+    
 }
 .infopic3 .skills {
     padding: 3rem;
     margin: 1rem;
+    text-align: center;
 }
 
 /* //////////////////// */
@@ -181,8 +211,16 @@ body {
 
 #aboutme {
     display: flex;
-    padding: 6rem 0rem;
-    background-color: #EEEEEE; 
+    padding: 8rem 0rem;
+    /* background-color: #EEEEEE;  */
+}
+
+#aboutme  .infops h3 {
+    font-size: 3rem;
+}
+
+#aboutme  .infops p {
+    font-size: 1.5rem;
 }
 
 .infotxt3, .infops {
@@ -208,7 +246,7 @@ body {
 
 .infops p {
     font-family: var(--small);
-    font-family: 1.5rem;
+    font-size: 1.5rem;
 }
 
 /* //////////////////// */
@@ -218,29 +256,113 @@ body {
 #works {
     display: flex;
     flex-direction: column;
+    /* background-color: #616161; */
+}
+
+#works .infotxt4, #works .samples {
+    flex: 1;
+    display: flex;
+}
+
+#works .infotxt4 {
+    flex: 1;
+    justify-content: center;
     padding: 4rem 0rem;
-    background-color: #616161;
+    /* color: white; */
 }
 
-/* #works .box1 {
-    background-image: url(/imgs/Untitled-1.jpg);
-    background-size: 100%;
+#works .infotxt4 h1 {
+    font-size: 4rem;
+    font-family: var(--big);
 }
 
-#works .box2 {
-    background-image: url(/imgs/Untitled-2.jpg);
-    background-size: 100%;
+#works .samples {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-flow: wrap;
 }
 
-#works .box3 {
-    background-image: url(/imgs/Untitled-3.jpg);
-    background-size: 100%;
-}
-
-#works .boxes {
-    height: 400px;
-    background-color: turquoise;
+#works .samples .boxes {
+    width: 300px;
+    height: 300px;
+    position: relative;
     margin: 2rem;
-    border-radius: 10px;
-} */
+}
+
+#works .samples .boxes h1 {
+    font-family: var(--small);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center; 
+    visibility: hidden;
+    font-size: 1.5rem;
+    text-align: center;
+    transition-delay: all;
+    transition-duration: 0.5s;
+}
+
+#works .samples .boxes:hover h1 {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+/* //////////////////// */
+
+/* //////////////////// Contact styles //////////////////// */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0rem;
+    background-color: #EEEEEE;
+}
+
+.contactinfo, .contactlinks {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactinfo {
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+.contactlinks {
+    flex-direction: row;
+    padding: 2rem 0rem;
+}
+
+.contactlinks .kontak {
+    margin: 0rem 1rem;
+}
+
+#contact .footer {
+    text-align: center;
+    font-family: var(--small);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
