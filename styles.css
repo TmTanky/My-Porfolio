@@ -66,7 +66,7 @@ hr {
 .navlogo h1 {
     padding-left: 3rem;
     font-family: var(--logo);
-    font-size: 2rem;
+    font-size: 1.5rem;
     
 }
 
@@ -120,6 +120,11 @@ hr {
 
 .infopic {
     justify-content: center;
+}
+
+.infopic2 .skel1, .infopic2 .skel2 {
+    display: flex;
+    flex-direction: row;
 }
 
 /* //////////////////// */
@@ -501,6 +506,10 @@ hr {
         font-size: 9vw;
     }
 
+    #works .infotxt4 {
+        padding: 2rem 0rem;
+    }
+
 
     #works .samples .boxes {
         margin: 0.5rem;
@@ -508,11 +517,32 @@ hr {
         height: 208px;
     }
 
+    #works .samples .boxes h1 {
+        font-size: 1rem;
+    }
+
     #contact {
         padding: 2rem 0rem;
     }
 
     .contactinfo {
+        padding: 1rem 0rem;
+    }
+
+    .infopic2 .skel1 .tekskils, .infopic2 .skel2 .tekskils {
+        width: 50px;
+        height: 50px;
+    }
+
+    .infopic2 .skel1 .skills h3, .infopic2 .skel2 .skills h3 {
+        font-size: 5vw;
+    }
+
+    .secbox {
+        padding: 1rem 0rem;
+    }
+
+    .thirdbox {
         padding: 1rem 0rem;
     }
 
