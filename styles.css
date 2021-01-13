@@ -25,6 +25,11 @@ hr {
     margin: 0.5rem auto;
 }
 
+.projek {
+    width: 400px;
+    height: 300px;
+}
+
 .design1 {
     height: 300px;
     width: 100%;
@@ -474,6 +479,10 @@ hr {
         text-align: left;
     }
 
+    .laptop {
+        width: 120px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -481,6 +490,30 @@ hr {
 
     .design1 {
         visibility: hidden;
+    }
+
+    .projek {
+        width: 300px;
+        height: 200px;
+    }
+
+    #works .infotxt4 h1 {
+        font-size: 9vw;
+    }
+
+
+    #works .samples .boxes {
+        margin: 0.5rem;
+        width: 300px;
+        height: 208px;
+    }
+
+    #contact {
+        padding: 2rem 0rem;
+    }
+
+    .contactinfo {
+        padding: 1rem 0rem;
     }
 
 }
