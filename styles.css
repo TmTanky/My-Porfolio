@@ -107,6 +107,7 @@ hr {
 }
 
 .infotxt h2 {
+    overflow-x: hidden;
     font-family: var(--big);
     font-weight: 700;
     font-size: 4vw;
@@ -158,6 +159,7 @@ hr {
 .infopic2 {
     padding: 2rem 0rem;
     flex-flow: wrap;
+    overflow-x: hidden;
 }
 
 .infopic2 h3 {
@@ -202,6 +204,7 @@ hr {
 .infopic3 {
     padding: 2rem 0rem;
     flex-flow: wrap;
+    overflow-x: hidden;
 }
 
 .infopic3 h3 {
@@ -258,7 +261,9 @@ hr {
 .infops p {
     font-family: var(--small);
     font-size: 1.5rem;
+    overflow-x: hidden;
 }
+
 
 /* //////////////////// */
 
