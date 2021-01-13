@@ -16,6 +16,7 @@
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 hr {
@@ -27,7 +28,7 @@ hr {
 .design1 {
     height: 300px;
     width: 100%;
-    background-color: violet;
+    background-color: rgb(28, 209, 185);
     position: absolute;
     top: 155px;
     right: 0;
@@ -103,13 +104,13 @@ hr {
 .infotxt h2 {
     font-family: var(--big);
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 4vw;
     border-bottom: solid 2px;
 }
 
 .infotxt p {
     font-family: var(--small);
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .infopic {
@@ -284,8 +285,8 @@ hr {
 }
 
 #works .samples .boxes {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 308px;
     position: relative;
     margin: 2rem;
 }
@@ -325,7 +326,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     padding: 4rem 0rem;
-    background-color: #EEEEEE;
+    background-color: rgb(28, 209, 185);
 }
 
 .contactinfo, .contactlinks {
@@ -354,7 +355,135 @@ hr {
     font-family: var(--small);
 }
 
+/* //////////////////// */
 
+/* //////////////////// Media Q styles //////////////////// */
+
+@media screen and (max-width: 1000px) {
+
+    .design1 {
+        height: 180px;
+    }
+
+    .infotxt h2 {
+        font-size: 2rem;
+    }
+
+    .infotxt p {
+        font-size: 1.5rem;
+    }
+
+    .picofme {
+        height: 250px;
+        width: 250px;
+    }
+
+    #aboutme .infops {
+        margin: auto 1rem;
+    }
+
+    #aboutme .infops h3 {
+        font-size: 5vw;
+    }
+
+    #aboutme .infops p {
+        font-size: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .design1 {
+        top: 130px;
+        height: 220px;
+    }
+
+    .infotxt h2 {
+        font-size: 2.5rem;
+    }
+
+    .infotxt p {
+        font-size: 1rem;
+    }
+
+    .picofme {
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .navmain {
+        flex-direction: column;
+    }
+
+    .navlogo {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        margin: 0rem auto;
+    }
+
+    .navlogo h1 {
+        text-align: center;
+        padding-left: 0rem;
+    }
+
+    .firstbox {
+        flex-direction: column;
+    }
+
+    .infotxt {
+        padding: 3rem 0rem;
+    }
+
+    .picofme {
+        height: 250px;
+        width: 250px;
+    }
+
+    .infotxt2 h1 {
+        font-size: 10vw;
+    }
+
+    .infotxt3 h1 {
+        font-size: 10vw;
+    }
+
+    #aboutme {
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+
+    #aboutme .infops {
+        margin: auto 2rem;
+    }
+
+    #aboutme .infops h3 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    #aboutme .infops p {
+        font-size: 4vw;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .design1 {
+        visibility: hidden;
+    }
+
+}
 
 
 
