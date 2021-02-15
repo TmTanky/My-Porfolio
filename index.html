@@ -22,7 +22,19 @@
                 <li> <a href="#aboutme"> About </a></li>
                 <li> <a href="#contact"> Contact </a></li>
         </div>
+
     </nav>
+
+    <div class="burgerside">
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/"> Home </a>
+        <a href="#aboutme"> About </a>
+        <a href="#contact"> Contact </a>
+      </div>
+      
+      <img src="https://img.icons8.com/android/24/000000/menu.png" onclick="openNav()" class="hamburger"/> 
+      </div>
 
     <div class="firstbox">
         <div class="infotxt">
@@ -63,21 +75,6 @@
         
     </div>
 
-    <!-- <div class="secbox">
-
-        <div class="infotxt2">
-            <h1> Frontend Skills </h1>
-        </div>
-
-        <div class="infopic2" data-aos="fade-right">
-            <div class="skills"> <img class="tekskils" src="https://img.icons8.com/color/80/000000/html-5.png"/> <h3> HTML5 </h3> </div>
-            <div class="skills"> <img class="tekskils" src="https://img.icons8.com/color/80/000000/css3.png"/> <h3> CSS3 </h3> </div>
-            <div class="skills"> <img class="tekskils" src="https://img.icons8.com/color/80/000000/javascript.png"/> <h3> Javascript </h3> </div>
-            <div class="skills"> <img class="tekskils" src="https://img.icons8.com/color/80/000000/bootstrap.png"/> <h3> Bootstrap </h3> </div>
-        </div>
-
-    </div> -->
-
     <hr>
 
     <div class="thirdbox">
@@ -94,7 +91,7 @@
 
     <div id="aboutme">
         <div class="infotxt3">
-            <img class="laptop" src="https://img.icons8.com/cotton/200/000000/laptop-coding.png"/>
+            <img class="laptop" src="https://img.icons8.com/cotton/250/000000/laptop-coding.png"/>
         </div>
 
         <div class="infops">
@@ -115,7 +112,7 @@
             <div class="boxes box1"> <img src="/imgs/redmi.jpg" alt="" class="projek"> <h1> A product sample website </h1> </div>
             <div class="boxes box2"> <img src="/imgs/loremstudios.jpg" alt="" class="projek"> <h1> A photography studio website </h1> </div>
             <div class="boxes box3"> <img src="/imgs/loremtalk.jpg" alt="" class="projek"> <h1> A facebook lookalike website </h1> </div>
-            <div class="boxes box4"> <img src="/imgs/oishifh.jpg" alt="" class="projek"> <h1> An E-commerce website </h1> </div>
+            <div class="boxes box4"> <img src="/imgs/oishifh.jpg" alt="" class="projek"> <h1> An E-commerce website (WIP) </h1> </div>
         </div>
 
     </div> 
@@ -144,6 +141,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
     <script src="/main.js"></script>
+    <script>
+        /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 
 </body>
 </html>
