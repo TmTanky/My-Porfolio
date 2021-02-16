@@ -300,12 +300,12 @@ hr {
 
 #works .samples .boxes {
     width: 400px;
-    height: 308px;
+    height: 316px;
     position: relative;
     margin: 2rem;
 }
 
-#works .samples .boxes h1 {
+#works .samples .boxes p {
     font-family: var(--small);
     display: flex;
     justify-content: center;
@@ -318,13 +318,13 @@ hr {
     opacity: 0;
     text-align: center; 
     visibility: hidden;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     transition-delay: all;
     transition-duration: 0.5s;
 }
 
-#works .samples .boxes:hover h1 {
+#works .samples .boxes:hover p {
     opacity: 1;
     visibility: visible;
     background-color: rgba(0, 0, 0, 1);
@@ -588,7 +588,7 @@ hr {
     #works .samples .boxes {
         margin: 0.5rem;
         width: 300px;
-        height: 208px;
+        height: 216px;
     }
 
     #works .samples .boxes h1 {
