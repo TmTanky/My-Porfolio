@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 :root {
     --logo: 'Righteous', cursive;
     --big: 'Ubuntu', sans-serif;
     --small: 'Montserrat', sans-serif;
+    --logo2: 'Abel', sans-serif;
 }
 
 * {
@@ -47,7 +48,7 @@ hr {
 .navmain {
     display: flex;
     background-color: #EEEEEE;
-    padding: 0.5rem 0rem;
+    padding: 0.8rem 0rem;
     position: sticky;
     z-index: 2;
     top: 0;
@@ -64,9 +65,10 @@ hr {
 
 .navlogo h1 {
     padding-left: 3rem;
-    font-family: var(--logo);
+    font-family: var(--logo2);
     font-size: 1.5rem;
-    margin: auto 0ren;
+    margin: auto 0rem;
+    letter-spacing: 3px;
 }
 
 .navlinks li {
@@ -78,6 +80,7 @@ hr {
     text-decoration: none;
     font-family: var(--small);
     font-size: 0.8rem;
+    letter-spacing: 2px;
     color: black;
     text-transform: uppercase;
 }
