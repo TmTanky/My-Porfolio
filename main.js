@@ -7,6 +7,7 @@ const link6 = document.querySelector(`.box6`)
 const link7 = document.querySelector(`.box7`)
 const link8 = document.querySelector(`.box8`)
 const link9 = document.querySelector(`.box9`)
+const link10 = document.querySelector(`.box10`)
 
 link1.addEventListener(`click`, function() {
     window.open('https://product-lorem.herokuapp.com/', '_blank');
@@ -39,7 +40,12 @@ link7.addEventListener(`click`, function() {
 link8.addEventListener(`click`, function() {
     window.open('https://lorem-blog.herokuapp.com/admin/login', '_blank');
 })
+
 link9.addEventListener(`click`, function() {
     window.open('https://lorem-school.herokuapp.com/login', '_blank');
+})
+
+link10.addEventListener(`click`, function() {
+    window.open('https://pokesearch-react.netlify.app/', '_blank');
 })
 

@@ -322,7 +322,6 @@ hr {
     text-align: center; 
     visibility: hidden;
     font-size: 1rem;
-    text-align: center;
     transition-delay: all;
     transition-duration: 0.5s;
 }
