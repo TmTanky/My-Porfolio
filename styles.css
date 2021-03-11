@@ -125,11 +125,6 @@ hr {
     justify-content: center;
 }
 
-.infopic2 .skel1, .infopic2 .skel2 {
-    display: flex;
-    flex-direction: row;
-}
-
 /* //////////////////// */
 
 /* //////////////////// SecondBox styles //////////////////// */
@@ -172,6 +167,11 @@ hr {
     text-align: center;
     padding: 3rem;
     margin: 0.5rem;
+}
+
+.infopic2 .skel1, .infopic2 .skel2 {
+    display: flex;
+    flex-direction: row;
 }
 
 /* //////////////////// */

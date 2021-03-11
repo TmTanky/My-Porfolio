@@ -9,6 +9,7 @@ const link8 = document.querySelector(`.box8`)
 const link9 = document.querySelector(`.box9`)
 const link10 = document.querySelector(`.box10`)
 const link11 = document.querySelector(`.box11`)
+const link12 = document.querySelector(`.box12`)
 
 link1.addEventListener(`click`, function() {
     window.open('https://product-lorem.herokuapp.com/', '_blank');
@@ -52,5 +53,9 @@ link10.addEventListener(`click`, function() {
 
 link11.addEventListener(`click`, function() {
     window.open('https://oishi-foodhub-react.netlify.app/', '_blank');
+})
+
+link12.addEventListener(`click`, function() {
+    window.open('https://social-lorem-mern.netlify.app/', '_blank');
 })
 
