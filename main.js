@@ -11,6 +11,7 @@ const link10 = document.querySelector(`.box10`)
 const link11 = document.querySelector(`.box11`)
 const link12 = document.querySelector(`.box12`)
 const link13 = document.querySelector(`.box13`)
+const link14 = document.querySelector(`.box14`)
 
 link1.addEventListener(`click`, function() {
     window.open('https://product-lorem.herokuapp.com/', '_blank');
@@ -62,5 +63,9 @@ link12.addEventListener(`click`, function() {
 
 link13.addEventListener(`click`, function() {
     window.open('https://hotel-lorem.netlify.app/', '_blank');
+})
+
+link14.addEventListener(`click`, function() {
+    window.open('https://unknown-lorem.netlify.app/', '_blank');
 })
 
